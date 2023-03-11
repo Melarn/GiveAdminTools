@@ -3,5 +3,7 @@ version: '${project.version}'
 main: me.melarnoff.giveadmintools.GiveAdminTools
 api-version: 1.19
 commands:
-  admintools:
+  kickbedrock:
     description: Gives a player a kick stick
+  ogogomech:
+    description: Gives a player a very sharp sword
