@@ -11,12 +11,12 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.jetbrains.annotations.NotNull;
 
-public class GiveSharpnessSword implements CommandExecutor {
+public class OneHitSword implements CommandExecutor {
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
         Player player = (Player) sender;
         if (player.hasPermission("admintools.sharpsword")) {
-            ItemStack sword = new ItemStack(Material.WOODEN_SWORD);
+            ItemStack sword = new ItemStack(Material.NETHERITE_SWORD);
             ItemMeta swordMeta = sword.getItemMeta();
             swordMeta.setDisplayName(ChatColor.RED + "ща убьет");
             swordMeta.addEnchant(Enchantment.DAMAGE_ALL, 99999, true);

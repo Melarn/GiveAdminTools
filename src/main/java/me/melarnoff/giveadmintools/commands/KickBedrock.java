@@ -23,7 +23,7 @@ public class KickBedrock implements CommandExecutor {
             stick.setItemMeta(stickMeta);
             player.getInventory().addItem(stick);
         } else {
-            player.sendMessage("нет прав");
+            player.sendMessage("ага конечно");
         }
         return true;
     }
