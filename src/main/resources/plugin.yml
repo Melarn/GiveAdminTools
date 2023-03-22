@@ -7,3 +7,5 @@ commands:
     description: Gives a player a kick stick
   ogogomech:
     description: Gives a player a very sharp sword
+  mutestick:
+    description: Gives a player a stick, which can mute a mob by clicking on it
