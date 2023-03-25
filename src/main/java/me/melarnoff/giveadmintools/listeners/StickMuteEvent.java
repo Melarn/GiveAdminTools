@@ -18,8 +18,7 @@ public class StickMuteEvent implements Listener {
             Entity toMute = event.getRightClicked();
             PlayerInventory inventory = player.getInventory();
             ItemStack inMainHand = inventory.getItemInMainHand();
-            if (inMainHand != null && inMainHand.hasItemMeta() &&
-                    inMainHand.getItemMeta().hasDisplayName() &&
+            if (inMainHand != null && inMainHand.hasItemMeta() && inMainHand.getItemMeta().getDisplayName() != null &&
                     inMainHand.getItemMeta().getDisplayName().equals(ChatColor.MAGIC + "mutestick")) {
                 toMute.getWorld();
                 toMute.setSilent(true);
